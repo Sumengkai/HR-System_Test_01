@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Salary-System-Staff/salarySystem-Staff.css" />
+    <script src="../jquery.min.js" defer></script>
+    <script src="./salarySystem-Staff.js" defer></script>
+    <script src="./salarySystemFunction-Staff.js" defer></script>
+    <title>新增薪水資料</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div>
+                <a href="http://127.0.0.1:5501/employeeInfo-Staff-frontpage/employeeInfo-staff-frontpage.html ">
+                    <img class="logo-header"
+                        src="https://upload.wikimedia.org/wikipedia/zh/thumb/7/7e/International_Monetary_Fund_logo.svg/225px-International_Monetary_Fund_logo.svg.png "
+                        alt="logo image" />
+                    <!-- 國際金錢組織 -->
+                </a>
+            </div>
+            <nav class="nav-header">
+                <button type="button" class="btn2"
+                    onclick="window.location.href='http://127.0.0.1:5501/Salary-System-Staff/searchSystem-Staff.html'">
+                    <li class="">查尋薪水資料</li>
+                    <!-- 查尋薪水資料 -->
+                </button>
+            </nav>
+            <a class="sign-out" aria-current="page" onclick="window.location.href='http://127.0.0.1:5501/index.html'"
+                role="button" aria-expanded="false">登出</a>
+        </div>
+    </header>
+
+    <section class="section1">
+        <div class="test">
+        <div class="middle-text">
+          <div class="solind1">
+            <form class="form">
+    <div class="startDate">(必填) 請輸入您的員工編號 : <input id="employeeCode" disabled></input></div>
+    <br>
+    <div class="startDate">開始日期 <input type="date" id="startDate" style="width:150px; height:30px;"></input></div>
+    <br>
+    <div class="startDate">結束日期 <input type="date" id="endDate" style="width:150px; height:30px; " /></input></div>
+    <br>
+    <div class="startDate"><button id="searchSalaryInfoListForStaffBut" style="font-size: 30px;">開始搜尋</button></div>
+    <!-- <hr style="color: red;" /> -->
+    <div class="searchSalaryInfoList">
+        <ul id="searchSalaryInfoList" class="list-group"></ul>
+    </div>
+            </form>
+          </div>
+        </div>
+        </div>
+    </section>
+    <br>
+    <div id="updateDiv"></div>
+    <footer>
+        <div class="main-footer">
+          <div class="container-footer">
+            <div class="footer-item">
+              <h4>服務項目</h4>
+              <div class="inside-item">
+                <p>▶&emsp;JAVA</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>關於</h4>
+              <div class="inside-item">
+                <p>▶&emsp;I WANT MONEY</p>
+                <p>▶&emsp;GIVE ME MONEY</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>課程內容</h4>
+              <div class="inside-item">
+                <p>▶&emsp;早上聽男哥講課</p>
+                <p>▶&emsp;下午寫專案</p>
+                <p>▶&emsp;晚上關電腦</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>聯絡方式</h4>
+              <div class="inside-item">
+                <p>▶&emsp;開啟小鈴鐺🔔</p>
+                <p>▶&emsp;訂閱✅</p>
+                <p>▶&emsp;按讚👍</p>
+                <p>▶&emsp;分享❤</p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy; 2022 Second Project Group. 版權所有・禁止複製轉載
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

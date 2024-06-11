@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<script src="./jquery.min.js" defer></script>
+	<script src="./employeeInfo-boss/get-update-employeeInfo-boss.js" defer></script>
+	<script src="./index.js" defer></script>
+
+	<title>HrSystem</title>
+</head>
+<div>
+	<img class="earth" src="http://pngimg.com/uploads/earth/earth_PNG39.png" alt="earth">
+
+
+	<body>
+
+
+		<div class="qqq">
+			<div class="q1background">💗╠═╬═ 剪 譜 寨 有 限 公 司 ═╬═╣💗</div>
+			<div class="q2color">💗╠═╬═ 剪 譜 寨 有 限 公 司 ═╬═╣💗</div>
+
+		</div>
+		<div class="qqq1">
+			<b>
+				<p> ➪ ➫ ➬ ⮷</p>
+			</b>
+		</div>
+
+		<div class="divlegendinfo">
+			<fieldset>
+				<!-- <div class="table"> -->
+				<legend>登入資訊</legend>
+				<!--  員工編號 格式 -->
+				<!-- required 必須填寫 -->
+				<!-- placeholder 小提示 -->
+				<label> 員工編號 : </label>
+				<form action="/employeeInfo-boss-frontpage.html" method="get">
+					<input id="logCode" type="text" name="userEmployCode" size="50" placeholder="請輸入員工編號"
+						pattern="[A-Z,a-z][0-9]{3}" aria-label="Text input with segmented dropdown button" required />
+					<br>
+					<br>
+					<!-- 密碼 格式 -->
+					<label> 身分證 : </label>
+					<input id="logId" type="password" name="userpassword" size="50" placeholder="請輸入身分證 "
+						aria-label="Text input with segmented dropdown button" required />
+					<br>
+					<br>
+					<input type="submit" id="onclick-submit" value="送出" required />
+					<input type="reset" value="清除">
+				</form>
+			</fieldset>
+		</div>
+		<div class="qqq2">
+			<p> ⇪⇦⇦⇦</p>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p class="International-Organization"> World</p>
+			</div>
+			<b>
+				<p class="international"> {__ I n t e r n a t i o n a l __ O r g a n i z a t i o n __}</p>
+			</b>>
+		</footer>
+
+
+
+	</body>
+
+</html>

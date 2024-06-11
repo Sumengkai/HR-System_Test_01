@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/work-system-boss/creat-work-boss.css" />
+    <script src="../jquery.min.js" defer></script>
+    <script src="../work-system-boss/WorkSystem-Boss-Funtion.js" defer></script>
+    <script src="../work-system-boss/WorkSystem-Boss.js" defer></script>
+    <title>查詢網頁</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div>
+                <a href="http://127.0.0.1:5501/employeeInfo-boss-frontpage.html ">
+                    <img class="logo-header"
+                        src="https://upload.wikimedia.org/wikipedia/zh/thumb/7/7e/International_Monetary_Fund_logo.svg/225px-International_Monetary_Fund_logo.svg.png "
+                        alt="logo image" />
+                    <!-- 國際金錢組織 -->
+                </a>
+            </div>
+            <nav class="nav-header">
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/work-boss.html'">
+                    <li class="">上班打卡</li>
+                    <!-- 上班打卡 -->
+                </button>
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/offWork.html'">
+                    <li class="">下班打卡</li>
+                    <!-- 下班打卡 -->
+                </button>
+
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/searchWorkInfo.html'">
+                    <li class="">員工查詢打卡</li>
+                    <!-- 查詢打卡資料 -->
+                </button>
+
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/searchWorkInfo-Boss.html'">
+                    <li class="">主管查詢打卡</li>
+                    <!-- 主管查詢打卡 -->
+                </button>
+
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/creatAbsenteeism.html'">
+                    <li class="">員工曠職</li>
+                    <!-- 新增員工曠職 -->
+                </button>
+
+                <!-- <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/work-system-boss/deleteByDateBetween.html'">
+                    <li class="">主管刪除打卡</li> -->
+                    <!-- 主管主管刪除打卡 -->
+                <!-- </button> -->
+            </nav>
+            <a class="sign-out" aria-current="page" onclick="window.location.href='http://127.0.0.1:5501/index.html'"
+                role="button" aria-expanded="false">登出</a>
+        </div>
+    </header>
+
+    <section class="section1">
+        <div class="test">
+        <div class="middle-text">
+    <div class="solind1">
+      <form class="form">
+    <div class="startDate">(必填)請輸入員工編號 : <input id="searchEmployeeCode" disabled></input></div>
+    <br>
+    <div class="startDate">開始日期 <input type="date" id="startDate"
+            style=" text-align:center; align-items: center;"></input></div>
+    <br>
+    <div class="startDate">結束日期 <input type="date" id="endDate"
+            style="width:150px; height:30px; text-align:center;" /></input></div>
+    <br>
+    <div class="startDate"><button id="searchWorkInfoListForStaffBut">開始搜尋</button></div>
+    <!-- <hr style="color: red;" /> -->
+    <div class="searchWorkInfoList">
+        <ul id="searchWorkInfoList" class="list-group"></ul>
+      </form>
+    </div>
+    </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main-footer">
+          <div class="container-footer">
+            <div class="footer-item">
+              <h4>服務項目</h4>
+              <div class="inside-item">
+                <p>▶&emsp;JAVA</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>關於</h4>
+              <div class="inside-item">
+                <p>▶&emsp;I WANT MONEY</p>
+                <p>▶&emsp;GIVE ME MONEY</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>課程內容</h4>
+              <div class="inside-item">
+                <p>▶&emsp;早上聽男哥講課</p>
+                <p>▶&emsp;下午寫專案</p>
+                <p>▶&emsp;晚上關電腦</p>
+              </div>
+            </div>
+            <div class="footer-item">
+              <h4>聯絡方式</h4>
+              <div class="inside-item">
+                <p>▶&emsp;開啟小鈴鐺🔔</p>
+                <p>▶&emsp;訂閱✅</p>
+                <p>▶&emsp;按讚👍</p>
+                <p>▶&emsp;分享❤</p>
+              </div>
+            </div>
+          </div>
+          <div class="conpyright">
+            &copy; 2022 Second Project Group. 版權所有・禁止複製轉載
+          </div>
+        </div>
+      </footer>
+</body>
+
+
+</html>

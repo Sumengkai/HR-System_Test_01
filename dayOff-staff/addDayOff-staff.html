@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dayOff-boss/dayOff-boss.css" />
+    <script src="../jquery.min.js" defer></script>
+    <!-- <script src="./employeeInfo-boss/get-update-employeeInfo-boss.js" defer></script> -->
+    <script src="../absenceSystem-boss/absence-system-function.js" defer></script>
+    <script src="./absence-system-staff.js" defer></script>
+    <script src="../absenceSystem-boss/getManagerEmail.js" defer></script>
+
+    <title>dayOff-boss.html</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div>
+                <a href="http://127.0.0.1:5501/employeeInfo-Staff-frontpage/employeeInfo-staff-frontpage.html ">
+                    <img class="logo-header"
+                        src="https://upload.wikimedia.org/wikipedia/zh/thumb/7/7e/International_Monetary_Fund_logo.svg/225px-International_Monetary_Fund_logo.svg.png "
+                        alt="logo image" />
+                    <!-- 國際金錢組織 -->
+                </a>
+            </div>
+            <nav class="nav-header">
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/dayOff-staff/addDayOff-staff.html'">
+                    <li class="">新增請假</li>
+                    <!-- 新增請假 -->
+                </button>
+                <button type="button" class="btn2"
+                    onclick="window.location.href='http://127.0.0.1:5501/dayOff-staff/updateAbsence-staff.html'">
+                    <li class="">修改請假</li>
+                    <!--修改請假 -->
+                </button>
+
+                <button type="button" class="btn3"
+                    onclick="window.location.href='http://127.0.0.1:5501/dayOff-staff/searchDayOff-staff.html'">
+                    <li class="">收尋請假</li>
+                    <!-- 收尋請假 -->
+                </button>
+
+                <button type="button" class="btn4"
+                    onclick="window.location.href='http://127.0.0.1:5501/dayOff-staff/deleteAbsence-staff.html'">
+                    <li class="">刪除請假</li>
+                    <!-- 刪除請假 -->
+                </button>
+            </nav>
+            <a class="sign-out" aria-current="page" onclick="window.location.href='http://127.0.0.1:5501/index.html'"
+                role="button" aria-expanded="false">登出</a>
+        </div>
+    </header>
+
+    <div class="background-img">
+        <img class="background-img1" src="/src/images/background3.png" alt="background-img" />
+        <br>
+        <br>
+        <br>
+        <div class="test">
+            <div class="middle-text">
+                <form class="form">
+                    <h2>員工請假單</h2>
+                    <label class="pp">
+                        請選擇請假日期:
+                        <input type="date" id="startDate" name="from">
+                        <label for="to">到</label>
+                        <input type="date" id="endDate" name="to">
+                    </label>
+                    <p class="pp">請選擇假別 : </p>
+                    <select id="epReason">
+                        <option>事假</option>
+                        <option>病假</option>
+                        <option>公假</option>
+                        <option>喪假</option>
+                    </select>
+
+                    <p id="123" class="pp">請選擇要請假的主管</p>
+
+                    <select id="managerEmail" class="pp">
+
+                    </select>
+
+
+                    <p class="pp" type="請假事由:"><input id="epStr" class="inp" placeholder="請輸入請假事由.." required /></input>
+                        <input id="intCreate" class="int-Create" type="submit"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="p2"></p>
+    <footer>
+        <div class="main-footer">
+            <div class="container-footer">
+                <div class="footer-item">
+                    <h4>服務項目</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;JAVA</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>關於</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;I WANT MONEY</p>
+                        <p>▶&emsp;GIVE ME MONEY</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>課程內容</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;早上聽男哥講課</p>
+                        <p>▶&emsp;下午寫專案</p>
+                        <p>▶&emsp;晚上關電腦</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>聯絡方式</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;開啟小鈴鐺🔔</p>
+                        <p>▶&emsp;訂閱✅</p>
+                        <p>▶&emsp;按讚👍</p>
+                        <p>▶&emsp;分享❤</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2022 Second Project Group. 版權所有・禁止複製轉載
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

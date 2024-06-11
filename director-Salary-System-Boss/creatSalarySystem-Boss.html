@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Salary-System-Boss/creatSalaryStem-boss.css" />
+    <script src="../jquery.min.js" defer></script>
+    <script src="/director-Salary-System-Boss/salarySystemFunction.js" defer></script>
+    <script src="./salarySystem.js" defer></script>
+    <title>director-新增薪水資料</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div>
+                <a href="http://127.0.0.1:5501/director-employeeInfo-boss-frontpage.html ">
+                    <img class="logo-header"
+                        src="https://upload.wikimedia.org/wikipedia/zh/thumb/7/7e/International_Monetary_Fund_logo.svg/225px-International_Monetary_Fund_logo.svg.png "
+                        alt="logo image" />
+                    <!-- 國際金錢組織 -->
+                </a>
+            </div>
+            <nav class="nav-header">
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/director-Salary-System-Boss/creatSalarySystem-Boss.html'">
+                    <li class="">新增薪水資料</li>
+                    <!-- 基本資料 -->
+                </button>
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/director-Salary-System-Boss/searchSystem-Boss-Staff.html'">
+                    <li class="">個人查尋薪水資料</li>
+                    <!-- 修改基本資料 -->
+                </button>
+                <button type="button" class="btn1"
+                    onclick="window.location.href='http://127.0.0.1:5501/director-Salary-System-Boss/searchOrUpdate-Boss.html'">
+                    <li class="">人資查詢或修改薪水資料</li>
+                    <!-- 新增基本資料 -->
+                </button>
+
+
+
+            </nav>
+            <a class="sign-out" aria-current="page" onclick="window.location.href='http://127.0.0.1:5501/index.html'"
+                role="button" aria-expanded="false">登出</a>
+        </div>
+    </header>
+
+    <div class="section1">
+        <div class="test">
+            <div class="middle-text">
+                <div class="solind1">
+                <form class="form">
+                    <h2>創建薪水資料</h2>
+                    <p class="pp">請輸入您的員工編號 : </p>
+                    <p class="pp" type="員工編號:"><input type="text" id="salaryCode" class="inp" placeholder="請輸入員工編號.."
+                             disabled/></input>
+                    </p>
+                    <p class="pp">請輸入要新增的員工編號 </p>
+                    <p class="pp" type="員工編號:"><input type="text" id="epCode" class="inp" placeholder="請輸入要新增的員工編號.."
+                             /></input>
+                    </p>
+                    <p class="pp">請輸入要新增的薪資日期 </p>
+                    <p class="pp" type="姓名:"><input id="epDate" type="date" class="inp" /></input>
+                    </p>
+                    <br>
+                    <input id="intCreate" class="int-Create" type="submit"></input>
+                </form>
+                
+            </div>
+            </div>
+        </div>
+        <div class="salaryInfo" id="salaryInfo">
+            <div class="middle-text">
+                <form class="form">
+                    <h2>薪水資料</h2>
+                    <p class="pp" id="employeeCode"> </p>
+                    <p class="pp" id="name"></p>
+                    <p class="pp" id="salaryDate"></p>
+                    <p class="pp" id="salary"></p>
+                    <p class="pp" id="raise_pay"></p>
+                    <p class="pp" id="manager_raise_pay"></p>
+                    <p class="pp" id="salary_deduct"></p>
+                    <p class="pp" id="total_salary"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ---- -->
+    <p class="p2"></p>
+    <footer>
+        <div class="main-footer">
+            <div class="container-footer">
+                <div class="footer-item">
+                    <h4>服務項目</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;JAVA</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>關於</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;I WANT MONEY</p>
+                        <p>▶&emsp;GIVE ME MONEY</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>課程內容</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;早上聽男哥講課</p>
+                        <p>▶&emsp;下午寫專案</p>
+                        <p>▶&emsp;晚上關電腦</p>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h4>聯絡方式</h4>
+                    <div class="inside-item">
+                        <p>▶&emsp;開啟小鈴鐺🔔</p>
+                        <p>▶&emsp;訂閱✅</p>
+                        <p>▶&emsp;按讚👍</p>
+                        <p>▶&emsp;分享❤</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2022 Second Project Group. 版權所有・禁止複製轉載
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
